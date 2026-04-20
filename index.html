@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduTech | Semantic HTML5 + Modern CSS3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container">
+      <a class="brand" href="#top" aria-label="Go to top">EduTech</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#modules">Modules</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <article class="hero-copy reveal">
+          <p class="eyebrow">Task 1 Submission</p>
+          <h1 id="hero-title">Semantic HTML5 with a modern CSS3 layout</h1>
+          <p>
+            This page demonstrates semantic structure, CSS variables, responsive design,
+            and clear visual hierarchy using intentional typography and color.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#modules">Explore Modules</a>
+            <a class="btn btn-secondary" href="#about">Why Semantic?</a>
+          </div>
+        </article>
+
+        <aside class="hero-card reveal delay-1" aria-label="Task highlights">
+          <h2>Highlights</h2>
+          <ul>
+            <li>Semantic tags for structure and accessibility</li>
+            <li>CSS variables for theme consistency</li>
+            <li>Responsive grid for desktop and mobile</li>
+            <li>Subtle entrance animation and hover states</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container reveal delay-2">
+        <h2 id="about-title">Why semantic HTML matters</h2>
+        <p>
+          Semantic elements like <code>header</code>, <code>main</code>, <code>section</code>,
+          and <code>footer</code> improve accessibility, SEO, and code readability by clearly
+          describing each part of the page.
+        </p>
+      </div>
+    </section>
+
+    <section class="modules" id="modules" aria-labelledby="modules-title">
+      <div class="container">
+        <h2 id="modules-title" class="reveal">Learning modules</h2>
+        <div class="card-grid">
+          <article class="module-card reveal delay-1">
+            <h3>Structure</h3>
+            <p>Use semantic blocks to create meaningful layout and improve maintainability.</p>
+          </article>
+          <article class="module-card reveal delay-2">
+            <h3>Styling</h3>
+            <p>Apply modern CSS with variables, gradients, and a scalable spacing system.</p>
+          </article>
+          <article class="module-card reveal delay-3">
+            <h3>Responsiveness</h3>
+            <p>Build fluid layouts that adapt smoothly across mobile, tablet, and desktop.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <p>Created for EduTech Full Stack Internship Task 1</p>
+      <a href="#top" aria-label="Back to top">Back to Top</a>
+    </div>
+  </footer>
+</body>
+</html>
